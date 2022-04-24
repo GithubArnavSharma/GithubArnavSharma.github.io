@@ -6,15 +6,61 @@
 
         <form method="POST" , action="{{url_for('index')}}">
             <b>
-                Your BMI :  <input type="text" , name='a' , placeholder="Enter here..."> <br><br>
-                <label for="smoke">Have you smoked >100 cigars?</label>
+                What is your BMI?  <input type="text" , name='a' , placeholder="Enter here..."> <br><br>
+
+                <label for="smoke">Have you smoked more than 100 cigars?</label>
                 <select name="b" id="smoke">
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                 </select>
+
+                <label for="drink">Do you drink more than 14 times a week?(more than 7 times if you're a woman)</label>
+                <select name="c" id="drink">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+
+                <label for="stroke">Have you ever had a stroke?</label>
+                <select name="d" id="stroke">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+
+                For many days in the past 30 days has your physical health been bad?  <input type="text" , name='e' , placeholder="Enter here..."> <br><br>
+                
+                For many days in the past 30 days has your mental health been bad?  <input type="text" , name='f' , placeholder="Enter here..."> <br><br>
+                
+                <label for="walk">Do you have serious difficulty walking or climbing stairs? </label>
+                <select name="g" id="walk">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+
+                <label for="sex">Is your biological sex male or female? </label>
+                <select name="h" id="sex">
+                  <option value="Yes">Male</option>
+                  <option value="No">Female</option>
+                </select>
+
+                <label for="age">Select your age category below </label>
+                <select name="i" id="stroke">
+                  <option value="18-24">18-24</option>
+                  <option value="25-29">25-29</option>
+                  <option value="30-34">30-34</option>
+                  <option value="35-39">35-39</option>
+                  <option value="40-44">40-44</option>
+                  <option value="45-49">45-49</option>
+                  <option value="50-54">50-54</option>
+                  <option value="55-59">55-59</option>
+                  <option value="60-64">60-64</option>
+                  <option value="65-69">65-69</option>
+                  <option value="70-74">70-74</option>
+                  <option value="75-79">75-79</option>
+                  <option value="80 or above">80 or above</option>
+                </select>
             </b>
-            <input type="submit" , value='Predict!'>
         </form>
+        <input type="submit" , value='Predict!'>
         
 
     </center>
