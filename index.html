@@ -4,7 +4,7 @@
 
         <h1> Will you get Heart Disease within the next 10 years? </h1>
 
-        <form method="POST" , action="{{url_for('predict')}}">
+        <form method="POST" , action="/predict">
             <b>
                 What is your BMI?  <input type="text" , name='a' , placeholder="Enter here..."> <br><br>
 
@@ -56,7 +56,7 @@
                   <option value="65-69">65-69</option>
                   <option value="70-74">70-74</option>
                   <option value="75-79">75-79</option>
-                  <option value="80 or above">80 or above</option>
+                  <option value="80 or older">80 or older</option>
                 </select><br><br>
 
                 <label for="race">Select your race below: </label>
@@ -86,7 +86,7 @@
                   <option value="Poor">Poor</option>
                   <option value="Fair">Fair</option>
                   <option value="Good">Good</option>
-                  <option value="Very Good">Very Good</option>
+                  <option value="Very good">Very good</option>
                 </select><br><br>
 
                 On average, how many hours of sleep do you get in a day?  <input type="text" , name='n' , placeholder="Enter here..."> <br><br>
@@ -109,9 +109,12 @@
                   <option value="No">No</option>
                 </select><br><br>
             </b>
-            <input type="submit" , value='Predict!'>
+            <button type="button" class="button" id="predict-button">Predict!</button>
         </form>
         
+        <div class="row">
+            <h2 id="result-text"></h2>
+        </div>
 
     </center>
 
