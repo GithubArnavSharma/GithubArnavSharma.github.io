@@ -33,7 +33,7 @@ def man():
     return render_template('index.html')
 
 @app.route('/predict', methods=['GET','POST'])
-def home():
+def predict():
     data = []
     for letter in 'abcdefghijklmnopq':
         data.append(request.form[letter])
