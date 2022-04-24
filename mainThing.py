@@ -50,4 +50,4 @@ def predict():
     return render_template('result.html', prob=50)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
