@@ -25,6 +25,9 @@ def prob_heart_disease(arr):
   prob = model.predict_proba(arr)[0][1]
   return int(prob*100)
 
+  
+app = Flask(__name__)
+
 @app.route('/')
 def man():
     return render_template('index.html')
